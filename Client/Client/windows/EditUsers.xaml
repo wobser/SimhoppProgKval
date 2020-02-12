@@ -1,0 +1,83 @@
+﻿<Page x:Class="Client.windows.EditUsers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client.windows"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="250"
+      Title="EditUsers">
+
+    <Grid>
+        <TextBox x:Name="userNameTextBox"
+                 HorizontalAlignment="Left" 
+                 Height="23" 
+                 Margin="24,38,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="194" 
+                 TextChanged="userNameTextBox_TextChanged" />
+        <ListBox x:Name="userNameDropDown" 
+                 HorizontalAlignment="Left" 
+                 Height="23" Margin="24,66,0,0" 
+                 VerticalAlignment="Top"
+                 Width="194"
+                 Visibility="Collapsed" 
+                 KeyDown="userNameDropDown_KeyDown" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+
+        <TextBox
+            x:Name="username"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="24,175,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            Width="194" 
+            />
+        <TextBox
+            x:Name="ssn"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="24,205,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            Width="194" 
+        />
+        <TextBox
+            x:Name="password"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="24,235,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            Width="194" 
+        />
+        <ComboBox
+            x:Name="group"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="24,265,0,0" 
+            VerticalAlignment="Top"
+            Width="194" 
+            />
+        <Button
+            x:Name="changeButton"
+            Content="Change"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="174,295,0,0" 
+            VerticalAlignment="Top" Click="ChangeButton_Click"
+            />
+
+        <Button
+            x:Name="backButton"
+            Content="Back"
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="24,295,0,0" 
+            VerticalAlignment="Top" Click="backButton_Click"
+        />
+
+    </Grid>
+</Page>
