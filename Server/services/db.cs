@@ -11,7 +11,7 @@ using Server.services;
 
 namespace Server.services
 {
-    class Database
+    public class Database
     {
         public void StartConnection()
         {
@@ -103,6 +103,7 @@ namespace Server.services
 
         public void RegisterUser(string name, string ssn, string salt, string hash)
         {
+
             var context = new DivingCompDbContext();
             context.Database.EnsureCreated();
 
