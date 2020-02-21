@@ -1,10 +1,18 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Server.services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Server_Test_Project.services
+namespace Server.services.Tests
 {
-    class DatabaseTests
+    [TestClass]
+    public class DatabaseTests
     {
+        [TestMethod]
+        public void EditUserTest()
+        {
+            Assert.Fail();
+        }
     }
 }

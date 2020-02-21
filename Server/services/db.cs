@@ -11,7 +11,7 @@ using Server.services;
 
 namespace Server.services
 {
-    public class Database
+    public class Database // ÄNDRAT TILL PUBLIC
     {
         public void StartConnection()
         {
