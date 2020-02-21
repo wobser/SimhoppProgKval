@@ -49,7 +49,8 @@ namespace Server.services
         //cancel()
         //token set cancel
     }
-    class WebClientHandler
+    // CHANGED TO PUBLIC |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+    public class WebClientHandler
     {
         TcpClient Client;
         int ID;

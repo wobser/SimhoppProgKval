@@ -301,7 +301,7 @@ namespace Client.windows
             }
         }
 
-        private List<string> ReadJumps()
+        public List<string> ReadJumps()
         {
             List<string> jumps = new List<string>();
             int j = Int32.Parse(jumpHeight.SelectedItem.ToString());
